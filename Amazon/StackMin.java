@@ -2,24 +2,14 @@ package Amazon;
 
 public class StackMin {
 	
-	Node head;
-	int top = -1;
+	int top ;
 	int maxSize;
-	Node[] array = new Node[maxSize];
+	StackNode[] array;
 	
-	public StackMin(int maxSize){
-		this.maxSize = maxSize;
-	}
-	
-	public class Node{
-		int num;
-		int min;
-		
-		public Node(int num, int min){
-			this.num = num;
-			this.min = min;
-			
-		}
+	public StackMin(int Size){
+		top = -1;
+		maxSize = Size;
+		array = new StackNode[maxSize];
 	}
 	
 	public boolean isEmpty(){
@@ -34,25 +24,25 @@ public class StackMin {
 	public void push(int num){
 		if(isEmpty())
 		{
-			Node temp = new Node(num,num);
+			StackNode temp = new StackNode(num,num);
 			array[++top] = temp;
 		}
 		else
 			{
 			if(num < getMin()){
-				Node temp = new Node(num, num);
+				StackNode temp = new StackNode(num, num);
 				array[++top] = temp;
 				}
 			else
 				{
-				Node temp = new Node(num, getMin());
+				StackNode temp = new StackNode(num, getMin());
 				array[++top] = temp;
 				}
 		}
 		
 	}
 	
-	public Node pop(){
+	public StackNode pop(){
 		return array[top--];
 	}
 	
