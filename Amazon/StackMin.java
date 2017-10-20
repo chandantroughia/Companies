@@ -2,7 +2,7 @@ package Amazon;
 
 public class StackMin {
 	
-	//Node head;
+	Node head;
 	int top = -1;
 	int maxSize;
 	Node[] array = new Node[maxSize];

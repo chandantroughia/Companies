@@ -16,6 +16,7 @@ public class StackApp {
 		
 		System.out.println(theStack.getMin());
 		
+		
 	}
 
 }

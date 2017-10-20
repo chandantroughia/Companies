@@ -20,6 +20,8 @@ public class bestTimeToBuyAndSellStock {
 		return max;
 	}
 	
+	
+	
 
 	
 	public static void main(String[] args) {
