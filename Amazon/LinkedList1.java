@@ -2,7 +2,7 @@ package Amazon;
 
 //Java program to reverse a linked list in groups of
 //given size
-class LinkedList
+class LinkedList1
 {
  Node head;  // head of list
 
@@ -76,7 +76,7 @@ class LinkedList
  
  public static void main(String args[])
  {
-     LinkedList llist = new LinkedList();
+     LinkedList1 llist = new LinkedList1();
       
      /* Constructed Linked List is 1->2->3->4->5->6->
         7->8->8->9->null */
@@ -98,5 +98,7 @@ class LinkedList
      System.out.println("Reversed list");
      llist.printList();
  }
+
+
 } 
 /* This code is contributed by Rajat Mishra */

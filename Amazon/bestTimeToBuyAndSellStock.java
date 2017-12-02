@@ -20,13 +20,8 @@ public class bestTimeToBuyAndSellStock {
 		return max;
 	}
 	
-	
-	
-
-	
 	public static void main(String[] args) {
 		int[] arr = {7, 2, 5, 3, 6, 4, 1, 2, 14};
 		System.out.println(stock(arr));
 	}
-
 }
