@@ -14,6 +14,7 @@ public class Dialer {
         ans.add("");
         for(int i = 0 ; i < digits.length(); i++){
             int x = Character.getNumericValue(digits.charAt(i));
+            System.out.println(x);
             while(ans.peek().length() == i){
                 String t = ans.remove();
                 for(char ch : map[x].toCharArray()){

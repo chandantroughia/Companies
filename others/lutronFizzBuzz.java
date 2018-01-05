@@ -14,9 +14,9 @@ public class lutronFizzBuzz {
 	}
 	
 	public static void recPrint(int start, int end){
-		if(start >= end){
+		if(start <= end){
 			iterativePrint(start, end);
-			recPrint(--start, end);
+			recPrint(++start, end);
 		}
 		else return;
 	}
@@ -27,7 +27,7 @@ public class lutronFizzBuzz {
 		//System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
 		//iterativePrint(100, 1);
 		//System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
-		recPrint(100, 1);
+		recPrint(1, 100);
 	}
 
 }
